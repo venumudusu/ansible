@@ -1,0 +1,17 @@
+---
+- name: Get Hyper-V (S2D) cluster health
+  hosts: hst01.example.lab
+  gather_facts: true
+  tasks:
+    - name: Copy PowerShell script to target
+      ansible.windows.win_copy:
+        src: Get-ClusterHealth.ps1
+        dest: C:\Temp\Get-ClusterHealth.ps1
+
+    - name: Run PowerShell script on target
+      ansible.windows.win_shell: C:\Temp\Get-ClusterHealth.ps1
+      register: cluster_health
+
+    - name: Debug cluster health output
+      ansible.builtin.debug:
+        msg: "{{ cluster_health.stdout_lines }}"
