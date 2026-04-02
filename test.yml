@@ -8,4 +8,4 @@
       register: computer_system_info
     - name: Display
       ansible.windows.win_powershell:
-        script: write-host "My name is Venu and I am testing Ansible on Windows"
+        script: write-output "My name is Venu and I am testing Ansible on Windows"
