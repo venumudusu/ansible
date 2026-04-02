@@ -7,5 +7,5 @@
       ansible.windows.win_shell: Get-CimInstance -ClassName Win32_ComputerSystem
       register: computer_system_info
     - name: Display
-      ansible.windows.win_shell: |
-        write-host "My name is Venu and I am testing Ansible on Windows"
+      ansible.windows.win_powershell:
+        script: write-host "My name is Venu and I am testing Ansible on Windows"

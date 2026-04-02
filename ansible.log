@@ -1,0 +1,98 @@
+2026-04-03 01:54:17,665 p=24547 u=venu n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dc01.example.lab
+
+2026-04-03 01:54:17,666 p=24547 u=venu n=ansible | playbook: Get-ClusterHealth.yml
+2026-04-03 01:54:18,308 p=24556 u=venu n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2026-04-03 01:54:24,848 p=24603 u=venu n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dc01.example.lab
+
+2026-04-03 01:54:24,849 p=24603 u=venu n=ansible | playbook: test.yml
+2026-04-03 01:54:25,487 p=24609 u=venu n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2026-04-03 01:54:31,755 p=24649 u=venu n=ansible | ERROR! this task 'ansible.windows.win_powershell' has extra params, which is only allowed in the following modules: ansible.builtin.include_tasks, ansible.legacy.script, ansible.builtin.include_vars, include, ansible.legacy.command, ansible.legacy.raw, ansible.builtin.shell, set_fact, ansible.builtin.command, ansible.builtin.add_host, ansible.legacy.include_vars, ansible.legacy.include, ansible.builtin.group_by, ansible.builtin.import_role, ansible.legacy.add_host, ansible.legacy.win_command, ansible.builtin.win_shell, meta, include_vars, win_command, ansible.legacy.group_by, ansible.builtin.set_fact, win_shell, command, ansible.builtin.meta, ansible.legacy.meta, include_role, ansible.legacy.import_role, group_by, ansible.legacy.import_tasks, ansible.windows.win_shell, ansible.builtin.include_role, shell, import_role, ansible.builtin.script, include_tasks, import_tasks, ansible.legacy.set_fact, script, raw, ansible.builtin.import_tasks, ansible.builtin.win_command, ansible.legacy.win_shell, ansible.builtin.raw, add_host, ansible.legacy.shell, ansible.windows.win_command, ansible.builtin.include, ansible.legacy.include_tasks, ansible.legacy.include_role
+
+The error appears to be in '/home/venu/projects/ansible/test.yml': line 9, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      register: computer_system_info
+    - name: Display
+      ^ here
+
+2026-04-03 01:54:39,314 p=24691 u=venu n=ansible | ERROR! this task 'ansible.windows.win_powershell' has extra params, which is only allowed in the following modules: raw, group_by, include_tasks, ansible.builtin.include_tasks, ansible.builtin.raw, ansible.legacy.import_role, ansible.builtin.include, script, ansible.legacy.win_command, win_command, win_shell, ansible.builtin.script, ansible.builtin.import_tasks, ansible.windows.win_command, ansible.builtin.shell, ansible.builtin.win_command, add_host, ansible.legacy.shell, ansible.builtin.include_role, ansible.legacy.include, ansible.builtin.include_vars, ansible.legacy.raw, ansible.builtin.add_host, ansible.builtin.meta, ansible.builtin.import_role, include, ansible.legacy.script, import_tasks, command, include_vars, ansible.legacy.import_tasks, ansible.legacy.group_by, ansible.builtin.set_fact, ansible.legacy.win_shell, import_role, ansible.builtin.command, set_fact, ansible.builtin.group_by, ansible.legacy.command, ansible.builtin.win_shell, ansible.legacy.include_vars, ansible.legacy.include_tasks, ansible.legacy.include_role, ansible.legacy.add_host, meta, shell, ansible.legacy.meta, ansible.windows.win_shell, ansible.legacy.set_fact, include_role
+
+The error appears to be in '/home/venu/projects/ansible/test.yml': line 9, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      register: computer_system_info
+    - name: Display
+      ^ here
+
+2026-04-03 01:54:47,011 p=24849 u=venu n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dc01.example.lab
+
+2026-04-03 01:54:47,011 p=24849 u=venu n=ansible | playbook: test.yml
+2026-04-03 01:54:47,730 p=24858 u=venu n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2026-04-03 01:54:48,943 p=24887 u=venu n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dc01.example.lab
+
+2026-04-03 01:54:48,943 p=24887 u=venu n=ansible | playbook: test.yml
+2026-04-03 01:54:49,572 p=24893 u=venu n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
