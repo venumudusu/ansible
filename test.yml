@@ -1,7 +1,8 @@
 ---
 - name: Test Windows Connectivity
-  hosts: all
-  gather_facts: no
+  hosts: dc01.example.lab
+  gather_facts: true
   tasks:
-    - name: Win Ping
-      ansible.windows.win_ping:
+    - name: Get ComputerSystem Information
+      ansible.windows.win_shell: Get-CimInstance -ClassName Win32_ComputerSystem
+      register: computer_system_info
