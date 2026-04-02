@@ -8,10 +8,4 @@
       register: computer_system_info
     - name: Display
       ansible.windows.win_shell: |
-        $info = @{
-          "Name" = "{{ computer_system_info.stdout | from_json | json_query('Name') }}"
-          "Domain" = "{{ computer_system_info.stdout | from_json | json_query('Domain') }}"
-          "Manufacturer" = "{{ computer_system_info.stdout | from_json | json_query('Manufacturer') }}"
-          "Model" = "{{ computer_system_info.stdout | from_json | json_query('Model') }}"
-        }
-        $info | Format-Table -AutoSize
+        write-host "My name is Venu and I am testing Ansible on Windows"
