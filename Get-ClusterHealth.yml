@@ -1,6 +1,6 @@
 ---
 - name: Get Hyper-V (S2D) cluster health
-  hosts: hst01.example.lab
+  hosts: dc01.example.lab
   gather_facts: true
   tasks:
     - name: Copy PowerShell script to target
