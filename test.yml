@@ -1,11 +1,13 @@
 ---
-- name: Test Windows Connectivity
+- name: Test Windows
   hosts: dc01.example.lab
   gather_facts: true
   tasks:
-    - name: Get ComputerSystem Information
-      ansible.windows.win_shell: Get-CimInstance -ClassName Win32_ComputerSystem
-      register: computer_system_info
-    - name: Display
-      ansible.windows.win_powershell:
-        script: write-output "My name is Venu and I am testing Ansible on Windows"
+    - name: Check server model
+      ansible.windows.win_shell: Get-CimInstance -ClassName Win32_ComputerSystem | Select-Object -ExpandProperty Model
+      register: server_model
+
+    - name: Stop if server model is not Virtual Machine
+      ansible.builtin.fail:
+        msg: "This playbook is only intended to run on Virtual Machines. Detected model: {{ server_model.stdout }}"
+      when: server_model.stdout != "Virtual Machine"
