@@ -10,4 +10,9 @@
     - name: Stop if server model is not Virtual Machine
       ansible.builtin.fail:
         msg: "This playbook is only intended to run on Virtual Machines. Detected model: {{ server_model.stdout }}"
-      when: server_model.stdout != "Virtual Machine"
+      when: server_model.stdout == "VMware20,1"
+
+    - name: Ensure C:\Temp directory exists
+      ansible.windows.win_file:
+        path: C:\Temp
+        state: directory
