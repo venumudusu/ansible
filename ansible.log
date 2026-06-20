@@ -832,3 +832,137 @@ The offending line appears to be:
     "community.general.sudosu": "Run tasks using sudo su -",
     "containers.podman.podman_unshare": "Run tasks using podman unshare"
 }
+2026-06-20 21:54:31,027 p=47546 u=venu n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dc01.example.lab
+
+2026-06-20 21:54:31,029 p=47546 u=venu n=ansible | playbook: test.yml
+2026-06-20 21:54:33,174 p=47561 u=venu n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2026-06-20 21:54:33,949 p=47584 u=venu n=ansible | ERROR! no module/action detected in task.
+
+The error appears to be in '/home/venu/projects/ansible/test.yml': line 20, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: Create a test file
+      ^ here
+
+2026-06-20 21:54:36,653 p=47629 u=venu n=ansible | ERROR! no module/action detected in task.
+
+The error appears to be in '/home/venu/projects/ansible/test.yml': line 20, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: Create a tes
+      ^ here
+
+2026-06-20 21:54:38,353 p=47662 u=venu n=ansible | ERROR! no module/action detected in task.
+
+The error appears to be in '/home/venu/projects/ansible/test.yml': line 20, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: Create a tes
+      ^ here
+
+2026-06-20 21:54:39,616 p=47680 u=venu n=ansible | ERROR! no module/action detected in task.
+
+The error appears to be in '/home/venu/projects/ansible/test.yml': line 20, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: Create a tes
+      ^ here
+
+2026-06-20 21:54:42,661 p=47716 u=venu n=ansible | ERROR! no module/action detected in task.
+
+The error appears to be in '/home/venu/projects/ansible/test.yml': line 20, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name:
+      ^ here
+
+2026-06-20 21:54:45,853 p=47752 u=venu n=ansible | ERROR! no module/action detected in task.
+
+The error appears to be in '/home/venu/projects/ansible/test.yml': line 20, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name:
+      ^ here
+
+2026-06-20 21:54:48,782 p=47786 u=venu n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dc01.example.lab
+
+2026-06-20 21:54:48,782 p=47786 u=venu n=ansible | playbook: test.yml
+2026-06-20 21:54:49,799 p=47799 u=venu n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2026-06-20 21:54:50,824 p=47818 u=venu n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dc01.example.lab
+
+2026-06-20 21:54:50,828 p=47818 u=venu n=ansible | playbook: test.yml
+2026-06-20 21:54:52,102 p=47830 u=venu n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2026-06-20 21:55:37,500 p=48021 u=venu n=ansible | [WARNING]: Unable to parse /home/venu/projects/ansible/inventory as an inventory source
+
+2026-06-20 21:55:37,502 p=48021 u=venu n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2026-06-20 21:55:37,520 p=48021 u=venu n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2026-06-20 21:55:38,035 p=48021 u=venu n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dc01.example.lab
+
+2026-06-20 21:55:38,042 p=48021 u=venu n=ansible | PLAY [Test Windows] **************************************************************************************************************************************************************
+2026-06-20 21:55:38,045 p=48021 u=venu n=ansible | skipping: no hosts matched
+2026-06-20 21:55:38,045 p=48021 u=venu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************

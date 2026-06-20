@@ -16,3 +16,7 @@
       ansible.windows.win_file:
         path: C:\Temp
         state: directory
+
+    - name: Show all facts
+      ansible.builtin.debug:
+        var: ansible_facts
